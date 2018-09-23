@@ -1,0 +1,25 @@
+{
+  "name": "github-follower-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p-yaowalak/Github-follower-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/p-yaowalak/Github-follower-app/issues"
+  },
+  "homepage": "https://github.com/p-yaowalak/Github-follower-app#readme",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "request": "^2.88.0"
+  }
+}
