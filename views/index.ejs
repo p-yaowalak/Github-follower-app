@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Github's followers</title>
+  </head>
+  <body>
+    <div class="container">
+        <form action="/" method="post">
+          <input name="username" type="text" placeholder="Enter Github's username" required>
+          <input type="submit" class="button" value="Get persons">
+        </form>
+      <table>
+      <% if(persons !== null){ 
+        for(var i=0;i<persons.length;i++){ %>
+          <tr>
+            <td><img src=<%= persons[i].avatar_url %>/></td>
+            <td><p><%= persons[i].login %></p></td>
+            <td><p><%= persons[i].html_url %></p></td>
+          </tr>
+      <% }
+      } else { %>
+        <p><%= error %></p>
+      <% } %>
+      </table>
+    </div>
+  </body>
+</html>
